@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Article Analyzer</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Article Analyzer</h1>
+    <form id="form" method="post" action="/analyze">
+      <label for="url">Article URL:</label>
+      <input type="text" id="url" name="url" placeholder="Enter article URL..." />
+      <button type="submit" id="submit-btn">Analyze</button>
+    </form>
+    <div id="loader"></div>
+    <div id="result-container"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
