@@ -60,7 +60,9 @@ def get_article_info(text):
         - article's publication date,
         - article's bias direction,
         - article's bias scale (1-10)
+        - a short explanation of why you rated the bias that way
         - a short 3-5 sentence summary of the article
+        - translate the summary into Gen Z language (use lots of slang)
         
         Article: \n\n{text}''',
         max_tokens=300,
@@ -108,7 +110,7 @@ def get_article_translations(text):
     return response.choices[0].text.strip()
 
 
-def analyze_article(text):
+def analyze_article (text):
     pub_info_text = get_publication_info(text)
     auth_info_text = get_author_info(text)
     article_info_text = get_article_info(text)
