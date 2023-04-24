@@ -1,9 +1,10 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Inter',sans-serif;
   }
   
   h1 {
     text-align: center;
+    font-family: 'Amatic SC', cursive;
   }
   
   form {
@@ -44,5 +45,13 @@ body {
     100% {
       transform: rotate(360deg);
     }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
   }
   

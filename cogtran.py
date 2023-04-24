@@ -4,7 +4,7 @@ import json
 from bs4 import BeautifulSoup
 import os
 
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = "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" #'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'
 openai.api_key = OPENAI_API_KEY
 
 def extract_text(url):
